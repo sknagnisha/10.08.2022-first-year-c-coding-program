@@ -1,0 +1,20 @@
+//to find the given number is harshad number or not
+
+#include<stdio.h>
+void main()
+{
+ int n,r,temp,sum=0;
+ scanf("%d",&n);
+ temp=n;
+ while(n>0)
+ {
+  r=n%10;
+  sum=sum+r;
+  n=n/10;
+ }
+ if(temp%sum==0)
+ printf("Harshad number");
+ else
+ printf("Not a Harshad number");
+ getch();
+} 

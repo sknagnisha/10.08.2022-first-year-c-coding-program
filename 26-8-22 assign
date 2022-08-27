@@ -1,0 +1,19 @@
+int main() {
+char str[50];
+gets(str);
+int i;
+for(i=0;str[i]!='\0';i++);
+int j,k=i;
+int count=0;
+for(j=0;j<i;j++)
+{
+    if(str[j]==str[k-1])
+    count++;
+    k--;
+}
+if(count==i)
+printf("palindrome ");
+else
+printf("not a palindrome");
+return 0;
+}

@@ -1,0 +1,18 @@
+int main() {
+char str[50];
+gets(str);
+int i;
+for(i=0;str[i]!=0;i++);
+int cnt1=0,cnt2=0,cnt3=0,j;
+for(j=0;j<i;j++)
+{
+    if(isupper(str[j]))
+    cnt1=cnt1+1;
+    if(islower(str[j]))
+    cnt2++;
+    if(isdigit(str[j]))
+    cnt3++;
+}
+printf("upppercase=%d\nlowercase=%d\nnumbers=%d",cnt1,cnt2,cnt3);
+    return 0;
+}
